@@ -70,6 +70,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                     self.photoLibraryButton.isEnabled = true
                     SVProgressHUD.dismiss()
                     self.displayAlert(message: results)
+                    if self.navigationItem.title == nil {
+                        self.navigationItem.title = "Live Recog"
+                        self.view.subviews[0].removeFromSuperview()
+                    }
                 }
             }
         }

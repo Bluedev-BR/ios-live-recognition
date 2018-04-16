@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--iOS Live Recognition-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Live_Recognition" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,20 +19,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Live Recognition" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbO-W0-ANH">
+                                <rect key="frame" x="93" y="319" width="189.5" height="94.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kbO-W0-ANH" secondAttribute="height" multiplier="2:1" id="jIX-On-fTS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z9l-qz-CGW">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kbO-W0-ANH" secondAttribute="trailing" constant="25" id="197-2W-gcr"/>
                             <constraint firstItem="z9l-qz-CGW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1CP-bm-kp3"/>
                             <constraint firstItem="z9l-qz-CGW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DAx-nP-bhM"/>
+                            <constraint firstItem="kbO-W0-ANH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UGP-kK-ppe"/>
+                            <constraint firstItem="kbO-W0-ANH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Ubf-LD-cMX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z9l-qz-CGW" secondAttribute="bottom" id="dEe-Gz-aGY"/>
+                            <constraint firstItem="kbO-W0-ANH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="tMe-Ra-VgT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z9l-qz-CGW" secondAttribute="trailing" id="uIf-cl-EN7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="iOS Live Recognition" id="1Cp-p6-H8s">
+                    <navigationItem key="navigationItem" id="1Cp-p6-H8s">
                         <barButtonItem key="leftBarButtonItem" image="Settings" id="hfk-84-bvX">
                             <connections>
                                 <segue destination="QRb-XB-BSY" kind="show" id="hV5-Cq-fe3"/>
@@ -128,7 +141,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UBL-FZ-tVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2116" y="-520"/>
+            <point key="canvasLocation" x="1822" y="-500"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="u8f-k8-MCG">
@@ -146,7 +159,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JQ-W7-tb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="577" y="134"/>
+            <point key="canvasLocation" x="843" y="134"/>
         </scene>
     </scenes>
     <resources>

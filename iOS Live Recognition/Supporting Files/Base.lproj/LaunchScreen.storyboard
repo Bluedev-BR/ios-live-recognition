@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +16,50 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epE-sb-GYd">
+                                <rect key="frame" x="87.5" y="271" width="200" height="146"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bld-Tk-PlC">
+                                        <rect key="frame" x="8" y="8" width="5" height="130"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="3Ul-3r-KrS"/>
+                                            <constraint firstAttribute="width" constant="5" id="m19-7b-V3W"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With Watson" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTm-x1-JTw">
+                                        <rect key="frame" x="21" y="8" width="171" height="130"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8qq-bD-9YM"/>
+                                    <constraint firstItem="rTm-x1-JTw" firstAttribute="leading" secondItem="bld-Tk-PlC" secondAttribute="trailing" constant="8" id="Cic-eL-eLF"/>
+                                    <constraint firstAttribute="bottom" secondItem="bld-Tk-PlC" secondAttribute="bottom" constant="8" id="Hqv-DM-LKH"/>
+                                    <constraint firstAttribute="bottom" secondItem="rTm-x1-JTw" secondAttribute="bottom" constant="8" id="PPg-34-q7p"/>
+                                    <constraint firstAttribute="trailing" secondItem="rTm-x1-JTw" secondAttribute="trailing" constant="8" id="V9G-Kj-ytN"/>
+                                    <constraint firstItem="bld-Tk-PlC" firstAttribute="leading" secondItem="epE-sb-GYd" secondAttribute="leading" constant="8" id="tCw-l2-52o"/>
+                                    <constraint firstItem="rTm-x1-JTw" firstAttribute="height" secondItem="bld-Tk-PlC" secondAttribute="height" id="uh9-Pa-jCU"/>
+                                    <constraint firstItem="rTm-x1-JTw" firstAttribute="top" secondItem="epE-sb-GYd" secondAttribute="top" constant="8" id="umN-dq-Wh1"/>
+                                    <constraint firstItem="bld-Tk-PlC" firstAttribute="top" secondItem="epE-sb-GYd" secondAttribute="top" constant="8" id="wvk-Op-Z2g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="epE-sb-GYd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Ok-PI-tnH"/>
+                            <constraint firstItem="epE-sb-GYd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lLH-vu-W9a"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
 </document>
